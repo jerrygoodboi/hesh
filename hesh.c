@@ -1,12 +1,8 @@
 #include<stdio.h>
-int main(){
-char string[20];
+#include <string.h>
+int main(int argc,char **argv){
+char *string=argv[1];
 int i=0;
-
-
- printf("Please don't type more than 20 characters, if you want so edit the source code.\n");
- printf("Enter the string: ");
-   gets(string);
    while(string[i]!='\0'){
         if(string[i]>31&&string[i]<80){
                       string[i]=string[i]+47;
